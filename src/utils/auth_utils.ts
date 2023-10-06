@@ -11,13 +11,13 @@ export interface IRegisterUser
     password: string
 }
 
-export interface AuthResults
+export interface IAuthResults
 {
     token: string
     result: boolean
     errors: string[]
 }
 
-export interface LoginResults extends AuthResults {}
+export interface ILoginResults extends IAuthResults {}
 
-export interface RegisterResults extends AuthResults {}
+export interface IRegisterResults extends IAuthResults {}
